@@ -1,7 +1,7 @@
 #ifndef XRDPFCDECISIONUCSD_H
 #define XRDPFCDECISIONUCSD_H
 
-#include "XrdFileCache/XrdFileCacheDecision.hh"
+#include "XrdPfc/XrdPfcDecision.hh"
 
 #include <pcrecpp.h>
 
