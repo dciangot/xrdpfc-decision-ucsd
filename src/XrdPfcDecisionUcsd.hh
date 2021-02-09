@@ -35,7 +35,7 @@ struct Rule
 };
 
 
-class Decision : public XrdFileCache::Decision
+class Decision : public XrdPfc::Decision
 {
 public:
 
@@ -57,7 +57,7 @@ protected:
 
 extern "C"
 {
-   XrdFileCache::Decision *XrdFileCacheGetDecision(XrdSysError&);
+   XrdPfc::Decision *XrdFileCacheGetDecision(XrdSysError&);
 }
 
 #endif
