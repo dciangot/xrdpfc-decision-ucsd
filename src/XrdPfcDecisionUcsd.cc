@@ -14,7 +14,7 @@ using namespace XrdPfcDecisionUcsd;
 
 extern "C"
 {
-XrdFileCache::Decision *XrdFileCacheGetDecision(XrdSysError &log)
+XrdPfc::Decision *XrdFileCacheGetDecision(XrdSysError &log)
 {
    return new Decision(log);
 }
@@ -22,7 +22,7 @@ XrdFileCache::Decision *XrdFileCacheGetDecision(XrdSysError &log)
 
 //==============================================================================
 
-Decision::Decision(XrdSysError &log) : XrdFileCache::Decision(), m_log(log)
+Decision::Decision(XrdSysError &log) : XrdPfc::Decision(), m_log(log)
 {
    m_log.Say("XrdPfcDecisionUcsd::Decision instantiated.");
 }
